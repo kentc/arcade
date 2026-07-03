@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>추억의 오락실</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0a12">
+<meta property="og:title" content="추억의 오락실">
+<meta property="og:description" content="옛날 오락실 게임, 폰에서 바로 한 판! 설치 없이 링크로 플레이.">
+<style>
+  :root{
+    --bg:#0b0a12; --card:#17151f; --line:#2a2738; --ink:#ece8f0; --dim:#8f8a9e;
+    --gold:#ffd23e; --red:#ff5a5f; --cyan:#39d0d8; --green:#5dd47a;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  body{
+    margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+    font-family:"Segoe UI", system-ui, sans-serif;
+    padding:32px 16px calc(40px + env(safe-area-inset-bottom));
+    display:flex; flex-direction:column; align-items:center;
+  }
+  header{text-align:center; margin-bottom:30px}
+  h1{
+    margin:0; font-size:clamp(32px,8vw,44px); font-weight:900; letter-spacing:.04em;
+    background:linear-gradient(180deg,var(--gold) 30%,#ff7a1f 90%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  header p{color:var(--dim); font-size:13px; letter-spacing:.25em; margin:6px 0 0; text-transform:uppercase}
+  main{width:100%; max-width:520px}
+  h2{
+    font-size:15px; color:var(--dim); font-weight:700; letter-spacing:.12em;
+    margin:26px 4px 10px; text-transform:uppercase;
+  }
+  .card{
+    display:flex; align-items:center; gap:14px; width:100%;
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:14px 16px; margin:8px 0; text-decoration:none; color:var(--ink);
+  }
+  a.card:active{background:#201d2c}
+  .icon{font-size:34px; width:48px; text-align:center; flex:none}
+  .info{flex:1; min-width:0}
+  .name{font-size:17px; font-weight:700; margin-bottom:3px}
+  .desc{font-size:12.5px; color:var(--dim); line-height:1.5}
+  .badge{
+    flex:none; font-size:11px; font-weight:700; padding:4px 9px; border-radius:10px;
+    letter-spacing:.05em; white-space:nowrap;
+  }
+  .b-live{background:#12331c; color:var(--green); border:1px solid #1d5a2f}
+  .b-proto{background:#33260f; color:var(--gold); border:1px solid #5a4418}
+  .b-soon{background:#221f2e; color:var(--dim); border:1px solid var(--line)}
+  .card.soon{opacity:.55}
+  footer{margin-top:36px; color:#565160; font-size:12px; letter-spacing:.1em; text-align:center; line-height:1.8}
+</style>
+</head>
+<body>
+<header>
+  <h1>추억의 오락실</h1>
+  <p>Retro arcade · reborn on mobile</p>
+</header>
+<main>
+  <h2>🕹️ 오락실 게임</h2>
+  <a class="card" href="https://kentc.github.io/neoguri-arcade/">
+    <span class="icon">🦝</span>
+    <span class="info">
+      <span class="name">너구리</span><br>
+      <span class="desc">사다리 오르고 뱀 넘어 과일 먹기 — 1982 오락실 그 감성 그대로</span>
+    </span>
+    <span class="badge b-live">플레이 가능</span>
+  </a>
+  <a class="card" href="https://kentc.github.io/balloon-pang/">
+    <span class="icon">🎈</span>
+    <span class="info">
+      <span class="name">풍선팡</span><br>
+      <span class="desc">튀어다니는 풍선을 작살로 팡팡! 쪼개지는 풍선을 피하며 전부 터뜨리기</span>
+    </span>
+    <span class="badge b-proto">프로토타입</span>
+  </a>
+  <a class="card" href="https://kentc.github.io/smoke-racer/">
+    <span class="icon">🚗</span>
+    <span class="info">
+      <span class="name">연막카</span><br>
+      <span class="desc">미로 속 깃발을 모아라! 쫓아오는 추격차는 연막으로 따돌리기</span>
+    </span>
+    <span class="badge b-proto">프로토타입</span>
+  </a>
+  <a class="card" href="https://kentc.github.io/bubble-duo/">
+    <span class="icon">🫧</span>
+    <span class="info">
+      <span class="name">버블듀오</span><br>
+      <span class="desc">거품으로 적을 가두고 터뜨리기 — 과일 보너스는 덤</span>
+    </span>
+    <span class="badge b-proto">프로토타입</span>
+  </a>
+
+  <h2>⚔️ 친구와 대전</h2>
+  <a class="card" href="https://kentc.github.io/alkkagi/">
+    <span class="icon">⚫</span>
+    <span class="info">
+      <span class="name">알까기 대전</span><br>
+      <span class="desc">바둑돌 튕겨서 상대 돌 떨어뜨리기 — AI전·한폰 대결·온라인 대전(준비 중)</span>
+    </span>
+    <span class="badge b-live">플레이 가능</span>
+  </a>
+  <span class="card soon">
+    <span class="icon">⚪</span>
+    <span class="info">
+      <span class="name">오목 대전</span><br>
+      <span class="desc">링크 하나로 친구와 온라인 대국</span>
+    </span>
+    <span class="badge b-soon">준비 중</span>
+  </span>
+  <span class="card soon">
+    <span class="icon">💣</span>
+    <span class="info">
+      <span class="name">포격전 (포트리스류)</span><br>
+      <span class="desc">각도와 파워로 승부하는 턴제 포격 대전</span>
+    </span>
+    <span class="badge b-soon">준비 중</span>
+  </span>
+  <span class="card soon">
+    <span class="icon">🏒</span>
+    <span class="info">
+      <span class="name">에어하키</span><br>
+      <span class="desc">실시간 1:1 스피드 대결</span>
+    </span>
+    <span class="badge b-soon">준비 중</span>
+  </span>
+</main>
+<footer>
+  설치 없이 브라우저에서 바로 · 링크를 친구에게 공유하세요<br>
+  RETRO ARCADE PROJECT
+</footer>
+</body>
+</html>
